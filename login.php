@@ -8,18 +8,19 @@ require 'header.php';
 
 
 
-    <div style='font-family: parisienne; color:white;'>
-    <h1 class='cover-heading'>Login</h1>
-   <form class='form' style=" width: 580px; font-size:20px; margin:auto;" action='loginuser.php' method='POST' id='color'>
-  <div class="mb-3" >
-
+    <div style='font-family: parisienne; color:white; margin: auto 20% '>
+    <nav class="navbar navbar-expand-md  gb-dark justify-content-center  ">
+   <form class='form' style=" margin: auto; width: 70%; font-size:20px; " action='loginuser.php' method='POST' id='color'>
+ 
+  <div class="mb-3">
+  
 
   
 <!--Sezione errori login-->
 <?php
     if(!empty($_SESSION['errors'])) {  ?>
 
-    <div class="alert alert-danger" style=" width: 580px; padding:30px;"> <?=$_SESSION['errors']?></div>
+    <div class="alert alert-danger" style=" width: 70%; padding:30px;"> <?=$_SESSION['errors']?></div>
       
 <?php
     //Se la pagina viene ricaricata il parametro errors si svuota per evitare che ricompaia nel ricaricare la pagina
@@ -28,7 +29,7 @@ require 'header.php';
   ?>
 
 
-
+    <h1 class='cover-heading'>Login</h1>
     <label for="email" class="form-label">Email address</label>
     <input type="email" class="form-control" id="email" name='email' aria-describedby="emailHelp" placeholder='example@gmail.com'  style="background-color: rgba(255, 255, 255, 0.6)">
     <div id="color" class="form-text">We'll never share your email with anyone else.</div>
@@ -44,7 +45,7 @@ require 'header.php';
   <button type="submit" class="btn btn-primary">Login</button>
 </form>
   </div>
-
+</nav>
 
 <?php
 require 'footer.php';

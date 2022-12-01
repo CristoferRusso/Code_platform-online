@@ -1,14 +1,16 @@
 <?php
 session_start();
+error_reporting(0);
 require 'connection.php';
 require 'header.php';
 
 
 ?>
 
-    <div style='font-family: parisienne; color:white;'>
-    <h1 class='cover-heading'>Registered</h1>
-   <form class='form' style=" margin:auto; width: 580px; font-size:20px;" action='signup.php' method='POST' id='color'>
+<div style='font-family: parisienne; color:white; margin: auto 20% '>
+    <nav class="navbar navbar-expand-md  gb-dark justify-content-center  ">
+  
+   <form class='form' style=" margin:auto; width: 70%; font-size:20px;" action='signup.php' method='POST' id='color'>
   <div class="mb-3" >
 
 
@@ -16,16 +18,20 @@ require 'header.php';
 <?php
     if(!empty($_SESSION['errors'])) {  ?>
 
-    <div class="alert alert-danger" style=" width: 580px; text-align: center;"> <?=$_SESSION['errors']?></div>
+    <div class="alert alert-danger" style=" width: 100%; padding:30px; margin-top:40%"> <?=$_SESSION['errors']?></div>
       
 <?php
     //Se la pagina viene ricaricata il parametro errors si svuota per evitare che ricompaia nel ricaricare la pagina
     $_SESSION['errors'] = '';
+    }  else if ($_POST['email']) { ?>
+      <div class="alert alert-success" style=" width: 400px; padding:30px;"> <?=$_SESSION['message']?></div>
+      <?php
+         $_SESSION['errors'] = '';
     }
   ?>
 
 
-
+       <h1 class='cover-heading'>Registered</h1>
     <label for="email" class="form-label">Email address</label>
     <input type="email" class="form-control" id="email" name='email' aria-describedby="emailHelp" placeholder='example@gmail.com'  style="background-color: rgba(255, 255, 255, 0.6);">
     <div id="color" class="form-text">We'll never share your email with anyone else.</div>

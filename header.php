@@ -24,11 +24,12 @@ require 'functions.php';
 
   </head>
   <body class="d-flex h-100 text-center">
-    
-<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column ">
   <header class="mb-auto">
-    <div style='font-family: parisienne; color:white; font-size:30px; '>
-      <nav class="nav nav-masthead justify-content-center float-md-end">
+    <div style='font-family: parisienne; color:white; font-size:30px; width: 100%;  '>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <nav class="nav nav-masthead justify-content-center float-md-end ">
         <a class="nav-link fw-bold  active" aria-current="page" href="index.php" >Home</a>
 
 
@@ -46,5 +47,6 @@ require 'functions.php';
 
 
       </nav>
+    </nav>
     </div>
   </header>

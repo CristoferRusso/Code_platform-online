@@ -77,7 +77,7 @@ $res = $stm->execute();
 if($res && $stm->affected_rows) {
     
     $_SESSION['message'] = 'User registered correctly' ;
-   // $_SESSION['user_email'] = $_POST['email'];
+    $_SESSION['user_email'] = $_POST['email'];
     header('Location: index.php');
 } 
     //VERIFICA UTENTE LOGGATO//
