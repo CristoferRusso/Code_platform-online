@@ -8,9 +8,9 @@ require 'header.php';
 
 
 
-    <div style='font-family: parisienne; color:white; margin: auto 20% '>
+    <div style='font-family: parisienne; color:white; margin: 0% 15%; padding-bottom: 20%  '>
     <nav class="navbar navbar-expand-md  gb-dark justify-content-center  ">
-   <form class='form' style=" margin: auto; width: 70%; font-size:20px; " action='loginuser.php' method='POST' id='color'>
+   <form class='form' style=" width: 70%; font-size:20px; " action='loginuser.php' method='POST' id='color'>
  
   <div class="mb-3">
   
@@ -20,7 +20,7 @@ require 'header.php';
 <?php
     if(!empty($_SESSION['errors'])) {  ?>
 
-    <div class="alert alert-danger" style=" width: 70%; padding:30px;"> <?=$_SESSION['errors']?></div>
+    <div class="alert alert-danger" style=" width: 100%; padding:30px;"> <?=$_SESSION['errors']?></div>
       
 <?php
     //Se la pagina viene ricaricata il parametro errors si svuota per evitare che ricompaia nel ricaricare la pagina

@@ -7,7 +7,7 @@ require 'header.php';
 
 ?>
 
-<div style='font-family: parisienne; color:white; margin: auto 20% '>
+<div style='font-family: parisienne; color:white; margin: 0% 15%; padding-bottom: 20% '>
     <nav class="navbar navbar-expand-md  gb-dark justify-content-center  ">
   
    <form class='form' style=" margin:auto; width: 70%; font-size:20px;" action='signup.php' method='POST' id='color'>
@@ -18,13 +18,13 @@ require 'header.php';
 <?php
     if(!empty($_SESSION['errors'])) {  ?>
 
-    <div class="alert alert-danger" style=" width: 100%; padding:30px; margin-top:40%"> <?=$_SESSION['errors']?></div>
+    <div class="alert alert-danger" style=" width: 100%; padding:30px; margin-top:30%"> <?=$_SESSION['errors']?></div>
       
 <?php
     //Se la pagina viene ricaricata il parametro errors si svuota per evitare che ricompaia nel ricaricare la pagina
     $_SESSION['errors'] = '';
-    }  else if ($_POST['email']) { ?>
-      <div class="alert alert-success" style=" width: 400px; padding:30px;"> <?=$_SESSION['message']?></div>
+    }  else if ( isUserLoggedIn()) { ?>
+      <div class="alert alert-success" style=" width: 100%; padding:30px;"> <?=$_SESSION['messageRegistration']?></div>
       <?php
          $_SESSION['errors'] = '';
     }

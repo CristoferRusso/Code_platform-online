@@ -75,10 +75,10 @@ $stm->bind_param('ss', $_POST['email'], $passHash);
 $res = $stm->execute();
 
 if($res && $stm->affected_rows) {
-    
-    $_SESSION['message'] = 'User registered correctly' ;
+   
+    $_SESSION['messageRegistration'] = 'User registered correctly <br> You can now access your Diary on the home page ' ;
     $_SESSION['user_email'] = $_POST['email'];
-    header('Location: index.php');
+    $_SESSION['message'] = 'You are logged in with';
 } 
     //VERIFICA UTENTE LOGGATO//
     //Verifica che l'utente è loggato controllando se l'email è stata inserita in sessione
