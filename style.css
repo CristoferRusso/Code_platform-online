@@ -1,13 +1,4 @@
 
-body{
-    
-    background: url('images/photo-1612172520228-bd8f77c1e4df.webp') no-repeat center center fixed;
-    background-size: cover;
-    background-color: black;
-   
-}
-
-
 
 .bd-placeholder-img {
     font-size: 1.125rem;
@@ -15,6 +6,7 @@ body{
     -webkit-user-select: none;
     -moz-user-select: none;
     user-select: none;
+ 
   }
 
   @media (min-width: 768px) {
@@ -64,17 +56,34 @@ body{
     margin-left: 15px;
     margin-right: 15px;
   }
-#remember{
-    padding-right: 350px;;
-}
+
+   
 #color{
     color: white;
+ 
    
 }
 
 
 @font-face {
-  font-family: parisienne;
-  src: url(text-style/Parisienne-Regular.ttf);
+  font-family: draw;
+  src: url(text-style/DrawflyGo-w1ly2.otf);
 }
+
+#formstyle {
+  border-radius: 30px; 
+  text-shadow:  0 0 7px purple; 
+  font-family: draw; 
+  color: white ; 
+  
+}
+
+@font-face {
+  font-family: text;
+  src: url(text-style/Hacked-KerX.ttf);
+  
+}
+
+
+
 
