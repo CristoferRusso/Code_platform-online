@@ -81,7 +81,8 @@
 @font-face {
   font-family: text;
   src: url(text-style/Hacked-KerX.ttf);
-  
+  background-color: rgb(53, 28, 150);
+  background-color: rgb(120, 16, 120)
 }
 
 

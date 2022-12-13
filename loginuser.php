@@ -19,9 +19,9 @@ if (empty($_POST['password'])) {
 $sql = "SELECT email,password FROM users WHERE email =?";
 //La funzione prepare prepara la query nella variabile $stm
 $stm = $link->prepare($sql);
-//In questo modo stiamo dicendo che il parametro che andremo a mettere nella query(?) è di tipo stringa e che il valore che voglia far passare è email
+//In questo modo stiamo dicendo che il parametro che andremo a mettere nella query(?) è di tipo stringa e che il valore che vogliamo far passare è email
 $stm->bind_param('s',($_POST['email']));
-//La variabile $res contiene lìesecuzione della query
+//La variabile $res contiene l'esecuzione della query
 $res = $stm->execute();
 //Va a verificare che ci sono dati nella variabile $res e mostra la quantità di righe ritornate e inserisce il risultato nella variabile $result
 $result = $stm->get_result();

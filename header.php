@@ -20,7 +20,7 @@ require 'functions.php';
         crossorigin="anonymous"></script>
     <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/cover/">
     <link rel="stylesheet" href="style.css">
-   
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
    <style>
     
@@ -63,6 +63,7 @@ require 'functions.php';
           // Se l'utente è loggato mostrerà il link per il logout
           ?>
           <a id='nav'class="nav-link fw-bold " href="logout.php" >Logout</a>
+          <a id='nav'class="nav-link fw-bold " href="jsbin.php" >Code Platform</a>
        <?php }?>
 
 

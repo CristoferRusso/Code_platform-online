@@ -1,6 +1,5 @@
 //Quando la pagina è caricata eseguira la funzione
 $(
-  
     function() {
 
         //Salva il valore nel caso in cui viene premuto il pulsante Save(OPZIONALE)

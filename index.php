@@ -9,8 +9,8 @@ if(!isUserLoggedIn()) {
     <img src="images/hacking.png" style="height: 40%; margin-top: 100px;" >
     <form style="margin:auto; width: 70%; padding: auto; border-radius: 30px; text-shadow:
     0 0 7px purple; box-shadow: 0px 0px 60px purple; font-family: draw; ">
-    <h1 style='color:white; text-align: center;'>Secret Diary</h1>
-    <h6 style='color:white; text-align: center;'>Register or log in to have access to your free and personal diary</h6>
+    <h1 style='color:white; text-align: center;'>Code Platform</h1>
+    <h6 style='color:white; text-align: center;'>Register or log in to have access to your free and personal notebooks and your test platform</h6>
     </form>
 
 <!--Se la variabile di sessione non è vuota vuol dire che la registrazione ha avuto successo-->
@@ -37,7 +37,8 @@ if(!empty($_SESSION['message'])) {
 </form> -->
 
  <?php } 
-
+if (!isUserLoggedIn()) {
 require 'footer.php';
+}
 ?>
    
