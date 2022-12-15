@@ -47,7 +47,7 @@ require 'functions.php';
 <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column ">
   <header class="mb-auto">
     <div style='font-size:100%; width: 100%; font-family: draw;  '>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <nav class="navbar navbar-expand-md  fixed-top bg-dark">
        
       <nav class="nav nav-masthead justify-content-center float-md-end ">
       <?php if(!isUserLoggedIn()) { ?>
@@ -58,7 +58,7 @@ require 'functions.php';
         <?php if(!isUserLoggedIn()) { ?>
         <a id='nav'class="nav-link fw-bold " href="signedup.php" style="border-radius:10px;" >Sign up</a>
         <a id='nav'class="nav-link fw-bold " href="login.php" style=" border-radius:10px" >Login</a>
-        <a id='nav'class="nav-link fw-bold " href="login.php" style=" border-radius:10px" >info</a>
+        <a id='nav'class="nav-link fw-bold " href="info.php" style=" border-radius:10px" >info</a>
         
         <?php } else 
         
