@@ -75,8 +75,8 @@ $stm->bind_param('ss', $_POST['email'], $passHash);
 $res = $stm->execute();
 
 if($res && $stm->affected_rows) {
-   
-    $_SESSION['messageRegistration'] = 'User registered correctly <br> You can now access your Diary on the home page ' ;
+    header('Location: index.php');
+    $_SESSION['messageRegistration'] = 'User registered correctly <br> You can now access your platform' ;
     $_SESSION['user_email'] = $_POST['email'];
     $_SESSION['message'] = 'You are logged in with';
 } 

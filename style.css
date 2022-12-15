@@ -75,6 +75,7 @@
   text-shadow:  0 0 7px purple; 
   font-family: draw; 
   color: white ; 
+  margin-bottom: 300px;
   
 }
 
@@ -82,7 +83,16 @@
   font-family: text;
   src: url(text-style/Hacked-KerX.ttf);
   background-color: rgb(53, 28, 150);
-  background-color: rgb(120, 16, 120)
+  background-color: rgb(28, 1, 28)
+}
+#cardOption{
+    
+  margin-bottom: 500px;
+  margin-left: 15%;
+  width: 70%;
+  background-color:  rgba(102, 90, 151, 0.7); ;
+  font-family: text;
+  color: rgb(32, 32, 186);
 }
 
 

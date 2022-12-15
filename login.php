@@ -5,7 +5,7 @@ require 'header.php';
 ?>
 <div id='formstyle'>
   <nav class="navbar navbar-expand-md  gb-dark justify-content-center  ">
-    <form class='form' style=" margin:5%; width: 400px;   font-size:20px;" action='loginuser.php' method='POST' id='color'>
+    <form class='form' style=" margin:5%; width: 400px; font-size:20px;" action='loginuser.php' method='POST' id='color'>
       <div class="mb-3">
         <!--Sezione errori login-->
         <?php
@@ -33,9 +33,12 @@ require 'header.php';
         <input value="1" type="checkbox" class="form-check-input" id="exampleCheck1" name='remember'>
         <label class="form-check-label" for="exampleCheck1" >Remember me</label>
       </div>
-      <button type="submit" class="btn btn-primary">Login</button>
+      <button type="submit" class="btn btn-outline-info">Login</button>
     </form>
 </div>
 </nav>
+<?php 
+require 'footer.php';
+?>
 
    

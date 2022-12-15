@@ -18,12 +18,9 @@ require 'header.php';
 
 
         #up-bar {
-           
-           
             width: 100%;
             border-radius: 3px;
-            margin-top: 20%;
-
+            margin-top: 150px;
         }
 
         #logo {
@@ -62,21 +59,20 @@ require 'header.php';
         }
 
         .panel {
-            width: 24%;
-          
-            border-left: none;
+            margin-left: 15%;
+            width: 50%;
             height: 75%;
             margin: 0 auto;
             float: left;
-            color: skyblue;
-            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            
         }
 
         #body-container {
             height: 1000px;
             margin: 10px auto;
-            margin-top: 10%;
-            width: 100%;
+            margin-top: 1%;
+            width: 80%;
+            margin-bottom: 1%;
            
 
         }
@@ -136,30 +132,19 @@ require 'header.php';
 <body>
 
     <div id="up-bar">
-       
-       
         <div id="buttons">
-
             <button class="button active" id="html">HTML</button>
-
             <button class="button" id="css">CSS</button>
-
             <button class="button" id="js">JavaScript</button>
-
             <button class="button active" id="output">Output</button>
-
         </div>
 
     </div>
 
     <div id="body-container">
-
         <textarea id="htmlPanel" class="panel"></textarea>
-
-        <textarea id="cssPanel" class="panel hidden"></textarea>
-
+       <textarea id="cssPanel" class="panel hidden"></textarea>
         <textarea id="jsPanel"  class="panel hidden"></textarea>
-
         <iframe id="outputPanel" class="panel"></iframe>
 
 

@@ -26,7 +26,7 @@ require 'functions.php';
     
     body{
     <?php if (!isUserLoggedIn()) { ?>
-    background: url('images/ebe6058119aff52f9b1de853611404b3.gif') no-repeat center center fixed;
+    background: url('images/R3.gif') no-repeat center center fixed;
     <?php 
   } else { ?>
     background: url('images/d1de5ab789284bc7f6a8988bc4756989.gif') no-repeat center center fixed;
@@ -48,15 +48,18 @@ require 'functions.php';
   <header class="mb-auto">
     <div style='font-size:100%; width: 100%; font-family: draw;  '>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-  
+       
       <nav class="nav nav-masthead justify-content-center float-md-end ">
-        <a class="nav-link fw-bold  active" aria-current="page" href="index.php" style="box-shadow: 0px 0px 60px green; border-radius:10px ">Home</a>
-         
+      <?php if(!isUserLoggedIn()) { ?>
+        <a class="nav-link fw-bold  active" aria-current="page" href="index.php" style="border-radius:10px ">Home</a>
+        <?php } ?>
 
         <!-- Se l'utente non è loggato mostra la pagina di registrazione e di login login-->
         <?php if(!isUserLoggedIn()) { ?>
-        <a id='nav'class="nav-link fw-bold " href="signedup.php" style="box-shadow: 0px 0px 60px blue; border-radius:10px;" >Sign up</a>
-        <a id='nav'class="nav-link fw-bold " href="login.php" style="box-shadow: 0px 0px 60px red; border-radius:10px" >Login</a>
+        <a id='nav'class="nav-link fw-bold " href="signedup.php" style="border-radius:10px;" >Sign up</a>
+        <a id='nav'class="nav-link fw-bold " href="login.php" style=" border-radius:10px" >Login</a>
+        <a id='nav'class="nav-link fw-bold " href="login.php" style=" border-radius:10px" >info</a>
+        
         <?php } else 
         
         { 
@@ -64,6 +67,8 @@ require 'functions.php';
           ?>
           <a id='nav'class="nav-link fw-bold " href="logout.php" >Logout</a>
           <a id='nav'class="nav-link fw-bold " href="jsbin.php" >Code Platform</a>
+          <a id='nav'class="nav-link fw-bold " href="index.php" >Notes</a>
+          <a id='nav'class="nav-link fw-bold " href="options.php" >Options</a>
        <?php }?>
 
 
